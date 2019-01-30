@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  pkg_aggpxtrack
+ * @subpackage  pkg_agay
  *
  * @copyright   Copyright (C) 2005 - 2018 Astrid Günther, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="content" method="upgrade">
-    <name>PLG_CONTENT_AGAY</name>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_AGAY</name>
     <author>Astrid Günther</author>
     <creationDate>##DATE##</creationDate>
     <copyright>(C) ##YEAR## Astrid Günther. All rights reserved.</copyright>
@@ -8,14 +8,14 @@
     <authorEmail>info@astrid-guenther.de</authorEmail>
     <authorUrl>www.astrid-guenther.de</authorUrl>
     <version>##VERSION##</version>
-    <description>PLG_CONTENT_AGAY_DESC</description>
+    <description>PLG_SYSTEM_AGAY_DESC</description>
     <files>
             ##FILES##
     </files>
     <!-- Media files -->
     <media 
-        folder="media/plg_content_agay" 
-        destination="plg_content_agay">
+        folder="media/plg_system_agay" 
+        destination="plg_system_agay">
             ##MEDIA_FILES##
     </media>
     <config>

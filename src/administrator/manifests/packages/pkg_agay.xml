@@ -16,13 +16,13 @@
 	<scriptfile>script.php</scriptfile>
 	<files>
 		<!-- The id for each extension is the element stored in the DB -->
-		<file type="plugin" id="agay" group="content">plg_content_agay.zip</file>
+		<file type="plugin" id="agay" group="system">plg_system_agay.zip</file>
 	</files>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.pkg_agay.sys.ini</language>
 	</languages>
 	<updateservers>
 		<!-- Note: No spaces or linebreaks allowed between the server tags -->
-		<server type="extension" name="Aggpxtrack Update Site">https://raw.githubusercontent.com/astridx/pkg_agay/master/agay-update.xml</server>
+		<server type="extension" name="Agay Update Site">https://raw.githubusercontent.com/astridx/pkg_agay/master/agay-update.xml</server>
 	</updateservers>
 </extension>
