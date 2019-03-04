@@ -12,12 +12,13 @@ If you do not find the plugin entry, you can search it via the search field.
 You find the options of this plugin in the menu 
 `Extensions | Plugins`. Then choose the entry `System - Agay (Accessibility)`
 
-![ay2]()
+![ay2](https://user-images.githubusercontent.com/9974686/53754334-f612b500-3eb3-11e9-9bdd-72e7e4e14aee.png)
+
 
 ## Hide visual changes
 
 
-![ay1]()
+![ay1](https://user-images.githubusercontent.com/9974686/53754333-f612b500-3eb3-11e9-89af-ac5189d37a97.png)
 
 ## Display the alternative text of all images
 
