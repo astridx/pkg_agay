@@ -1,24 +1,93 @@
-# pkg_gpay / Joomla System Plugin for convert a HTML code in a HTML code more accessible
+# pkg_agpay / Joomla System Plugin for converting a HTML code in a HTML code more accessible
  
 # Quickstart
 
 1. Install this package via Joomla! installer. 
 Please activate the plugin via `Extension | Plugins` before you use it. 
 If you do not find the plugin entry, you can search it via the search field.
-
 ...
 
 # Options
 
+You find the options of this plugin in the menu 
+`Extensions | Plugins`. Then choose the entry `System - Agay (Accessibility)`
+
+![ay2]()
+
 ## Hide visual changes
 
 
+![ay1]()
+
 ## Display the alternative text of all images
 
-```<p><img src="/joomla-cms/images/sampledata/parks/banner_cradle.jpg" border="0" alt="Cradle Park Banner"></p>```
 
+### If there is not `title`, the `alt`-text is copied to the `title`
 
-```<p><img src="/joomla-cms/images/sampledata/parks/banner_cradle.jpg" border="0" alt="Cradle Park Banner" title="Cradle Park Banner" id="id-hatemile-display-4184e8376dd47c008fd68858d6cb09b67747e969f4fec4996bcf4067ac02725a-0" data-attributetitleof="id-hatemile-display-4184e8376dd47c008fd68858d6cb09b67747e969f4fec4996bcf4067ac02725a-0"></p>```
+This code 
+
+```
+<img 
+src="images/sampledata/parks/banner_cradle.jpg" 
+alt="Cradle Park Banner" 
+border="0" />
+```
+
+is changed to
+
+```
+<img 
+src="/joomla-cms/images/sampledata/parks/banner_cradle.jpg" 
+alt="Cradle Park Banner" 
+border="0" 
+title="Cradle Park Banner" 
+id="id-hatemile-display-ae7398d6fd7d5e69fb8c3e9921f51a946231eeb04aaf185c0bb4265761023eea-0" 
+data-attributetitleof="id-hatemile-display-ae7398d6fd7d5e69fb8c3e9921f51a946231eeb04aaf185c0bb4265761023eea-0">
+```
+
+### If there is no `alt`, the `title`-text is copied to the `alt`
+
+This code 
+
+```
+<img 
+title="Cradle Park Banner" 
+src="images/sampledata/parks/banner_cradle.jpg" 
+border="0" />
+```
+
+is changed to
+
+```
+<img 
+title="Cradle Park Banner" 
+src="/joomla-cms/images/sampledata/parks/banner_cradle.jpg" 
+border="0" 
+alt="Cradle Park Banner" 
+id="id-hatemile-display-ae7398d6fd7d5e69fb8c3e9921f51a946231eeb04aaf185c0bb4265761023eea-1" 
+data-attributetitleof="id-hatemile-display-ae7398d6fd7d5e69fb8c3e9921f51a946231eeb04aaf185c0bb4265761023eea-1">
+```
+
+### If there is not `title` and no `alt`, the `alt`-text is set with an empty value.
+
+This code 
+
+```
+<img 
+src="images/sampledata/parks/banner_cradle.jpg" 
+border="0" />
+```
+
+is changed to
+
+```
+<img 
+src="/joomla-cms/images/sampledata/parks/banner_cradle.jpg" 
+border="0" 
+alt="" 
+role="presentation" 
+aria-hidden="true">
+```
 
 
 ## Display the headers of each data cell of all tables
