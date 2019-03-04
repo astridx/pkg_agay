@@ -22,6 +22,9 @@ You find the options of this plugin in the menu
 
 ## Display the alternative text of all images
 
+## Mark and Asscociate
+
+...
 
 ### If there is not `title`, the `alt`-text is copied to the `title`
 
